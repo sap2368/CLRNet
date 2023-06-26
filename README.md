@@ -199,6 +199,32 @@ If our paper and code are beneficial to your work, please consider citing:
 }
 ```
 
+# Docker
+
+### docker pull
+CUDA10.2,pytorch1.6の環境をdocker pullする
+```Shell
+sudo docker pull kugwzk/pytorch1.6.0-cuda10.2-cudnn7-devel-apex-v100:latest
+```
+### イメージの確認
+イメージが取得できているかを確認する
+```Shell
+sudo docker images
+```
+### コンテナの作成
+コンテナの稼働状況を確認する
+```Shell
+sudo docker ps
+```
+取得したイメージからコンテナを作成
+```Shell
+sudo docker run -it a2dd945b5a
+```
+別ウィンドウで端末を立ち上げ、コンテナの稼働状況を確認する
+```Shell
+sudo docker ps
+```
+
 ## Acknowledgement
 <!--ts-->
 * [open-mmlab/mmdetection](https://github.com/open-mmlab/mmdetection)
